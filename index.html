@@ -12,31 +12,34 @@
 <body class="impress-not-supported">
 
 <div id="nav">
-  <a href="#about">About</a> |
-  <a href="#projects">Projects</a> |
-  <a href="#blog">Blog</a> |
-  <a href="#photography">Photography</a>
+  <a href="#about"><img src="images/about.png">About</a>
+  <a href="#projects"><img src="images/projects.png">Projects</a>
+  <a href="#blog"><img src="images/notebook.png">Blog</a>
+  <a href="#photography"><img src="images/photography.png">Photography</a>
 </div>
 
 <div id="impress">
   <div id="about" class="step box" data-x="0" data-rotate-x="10">
     <h1>Hello!</h1> 
-    My name is Ibrahim Muhammad and this is my personal website.<br/>
-    I am a software developer at a startup called StokFridge based in Toronto. I love technology and innovation.
-    I recently moved to Toronto from the United Arab Emirates, where I was studying Mechanical Engineering at American University of Sharjah.
+    <p style="font-size: 30px">
+    My name is Ibrahim Muhammad and I love to build things.<br/>
+    </p>
     <br />
-    <img src="images/ib.jpg"><br/>
-    <h2>
-    <a href="#about">About</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#blog">Blog</a> |
-    <a href="#photography">Photography</a>
-    </h2>
+    <img id="me" src="images/ib.jpg"><br/>
+    <p>
+    I love technology and innovation. I code in a dozen languages.
+    </p>
+    <div class="center">
+    <a href="https://twitter.com/#!/ibrahimm"><img src="images/twitter.png"></a>
+    <a href="https://github.com/whistler"><img src="images/github.png"></a>
+    <br/>
+    <span> &lt; Use a spacebar or arrow keys to navigate &gt;</span>
+    </div>
   </div>
-  <div id="blog" class="step box" data-x="800" data-rotate-y="0">
+  <div id="blog" class="step box" data-x="1000" data-rotate-z="-10">
 
   </div>
-  <div id="projects" class="step box" data-x="1600" data-rotate-y="10">
+  <div id="projects" class="step box" data-x="2000" data-rotate-y="10">
     <h1>Projects</h1>
     <ul>
       <li>JumbleSolve</li>
@@ -52,7 +55,7 @@
       <input type="text"></input>
     </ul>
   </div>
-  <div id="photography" class="step box" data-x="2400" data-rotate-z="10">
+  <div id="photography" class="step box" data-x="3000" data-rotate-z="10">
     <div id="album">
         <h1>Photography</h1>
     </div>
@@ -60,6 +63,16 @@
   </div>
   
 </div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
 
 <script src="impress.js"></script>
 <script>impress();</script>
