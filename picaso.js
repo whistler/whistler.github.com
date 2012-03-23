@@ -1,3 +1,5 @@
+var mo = false;
+
   $(document).ready(function() {  
     // change these two to display your own album
     var userId = "117489843558070583795";
@@ -14,18 +16,25 @@
       }
     });
 
-    $("#photography-scroll-down").hover(
-      function() {
-        alert('hi');
-      },
-      function() {
-        alert('bye');
-      }
-    );
+    $("#photography-scroll-down").hover( function () {
+      mo = true;
+      $(this).data('timeout', setTimeout( function () {
+        scrollAlbumDown();
+      }, 100));
+    }, function () {
+      mo = false;
+      clearTimeout($(this).data('timeout'));
+    });
 
   });   
-  
+
+
 function scrollAlbumDown() {
-  alert('hi');
-  album.scrollTop = album.scrollTop + 100;
+  var album = document.getElementById('album')
+  album.scrollTop = album.scrollTop + 10;
+  console.log(mo);
+  if (mo==true) {
+  $("#photography-scoll-down").data('timeout', setTimeout( function () {
+     scrollAlbumDown();
+   }, 70))};
 }
