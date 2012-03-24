@@ -10,6 +10,7 @@ theme :
 
 <title>Ibrahim Muhammad</title>
 <link href="ibrahim.css" rel="stylesheet" type="text/css"></link>
+<link href="syntax-github.css" rel="stylesheet" type="text/css"></link>
 <script src="jquery.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Exo:400,300italic' rel='stylesheet' type='text/font'>
 </head>
@@ -43,16 +44,15 @@ theme :
     </div>
   </div>
   <div id="blog" class="step box" data-x="1000" data-rotate-z="-10">
-    <h1>Blog</h1>
     {% for post in site.posts %}
       {% if post.title == site.posts.first.title %}
         <div class="current-post">
       {% else %}
         <div class="post">
       {% endif %}
-        <span>{{ post.date | date_to_string }}</span> &raquo; 
-        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-        {{ post.content }}
+        <h1>Blog &raquo; {{ post.title }}</h1>
+        <span class="date">{{ post.date | date_to_string }}</span>  
+        <p>{{ post.content }}</p>
       </div>
     {% endfor %}
     <div style="position: absolute; bottom: 20px; left: 335px">

@@ -50,7 +50,7 @@
   visibility: visible;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 550px;
+  height: 650px;
 }
 
 .post {
@@ -223,4 +223,8 @@ body {
 .arrow {
   height: 32px;
   width: 32px;
+}
+
+.date {
+  display: block;
 }

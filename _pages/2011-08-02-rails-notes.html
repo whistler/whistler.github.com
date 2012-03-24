@@ -1,0 +1,76 @@
+--- 
+layout: page
+title: Rails Notes
+tags: []
+
+status: publish
+type: page
+published: true
+meta: 
+  _wp_page_template: default
+  _edit_last: "1"
+---
+<pre>
+<strong>Check empty, nil, blank</strong>
+<code lang="ruby">object.blank?</code>
+
+<strong>Formatted JSON</strong>
+<code lang="ruby">JSON.pretty_generate(my_json)</code>
+
+<strong>Pass parameters between new and create actions</strong>
+Use a hidden field tag
+<code lang="ruby">hidden_field_tag :data, @data</code>
+
+<strong>Render partial with collection</strong>
+
+<code lang="ruby">render :partial => "product", :collection => @products </code>
+
+<strong>Simple search</strong>
+<code lang="ruby">
+def self.search(search)
+search_condition = "%" + search + "%"
+find(:all, :conditions => ['title LIKE ? OR description LIKE ?', _
+search_condition, search_condition])
+end
+</code>
+Another way
+<code lang="ruby">SomeModel.where("field LIKE ?", params[:search]).first</code>
+
+<strong>validate presence of one or the other<strong></strong></strong>
+
+<code lang="ruby">
+validates :email, :presence => {:unless => "phone", _
+:message => "Please enter either an email or a phone number"}
+</code>
+
+<strong>data types for rails</strong>
+<code lang="ruby">
+:string, :text, :integer, :float, :decimal, :datetime, :timestamp, :time, :date, :binary, :boolean.
+</code>
+<strong> add fields to existing table</strong>
+
+<code lang="bash">
+rails generate migration add_fieldname_to_tablename fieldname:string
+</code>
+
+<strong>test a controller actions using Rails console</strong>
+
+<code lang="ruby">
+app.get '/controller/action'
+</code>
+
+for passing parameters use
+<code lang="ruby">
+app.post'controller/action?parameter1=value1&parameter2=value2'
+</code>
+
+for checking the response
+<code lang="ruby">
+app.response
+</code>
+
+<strong>Convert a list in to comma separated string </strong>
+
+<code lang="ruby">
+tags.map { |tag| tag.name }.join(',')
+</code>

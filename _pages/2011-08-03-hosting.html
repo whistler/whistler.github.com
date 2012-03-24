@@ -1,0 +1,59 @@
+--- 
+layout: page
+title: Ruby on Rails Hosting Guide
+tags: []
+
+status: publish
+type: page
+published: true
+meta: 
+  _edit_last: "1"
+  _wp_page_template: default
+---
+If you are just starting out with Rails and want to test some of your newbie applications on a real server, this page is for you. 
+
+<strong>Free Hosting</strong>
+There are a few free Rails hosts but you probably would not go pretty far with that. However <a href="http://www.heroku.com">Heroku</a> is a nice place which hosts small Rails applications for free but its performance is not ideal.
+
+<strong>Shared Hosting</strong>
+You might be considering getting a shared hosting. There are many available that provide Rails support some of the good ones are: Site5, Bluehost & Dreamhost. However a shared environment is not well suited for Rails applications due to their heavy memory requirements. The ideal solution would be to get your own VPS. 
+
+<strong>VPS Hosting</strong>
+If money is not an issue there are plenty of good VPS hosts around, but if your website would not immediately get 1000+ visitors per day, you might want to consider getting a <a href="www.lowendbox.com">low-cost VPS</a>. Dont expect truely amazing performance from these VPS hosts, try not to get the cheapest one as it might be bad. But they are good enough to host some simple applications. These servers are unmanaged which means you have to configure your server yourself but this also gives you the flexibility to configure your server exactly like you want.
+
+<strong>How much memory do you need</strong>
+One question you would ask when buying a VPS is how much memory is enough for your Rails app? This depends on your application and server configuration. 128 MB should be enough if you are running a small lightweight application on SQLite. If you are planning on running MySQL, it takes a lot of memory and you should probably go for atleast 512MB, although 256 might be doable if you have a light configuration.
+
+<strong>Self-hosting at home</strong>
+It might be a good idea to host from home if you have an unlimited Internet connection and an old computer laying around. But be careful about setting up your router and firewall right to keep yourself secure.
+
+<strong>Configuring your server</strong>
+Ok, so now you got your VPS host or your old computer you want to host on, how do you set up the server. 
+
+<b>Installing Ruby 1.9 and Rails 3</b>
+Assuming you have an Ubuntu or Debian server that you are managing yourself. Although ruby 1.9 is available in the repository
+
+<code class="bash">
+sudo apt-get install ruby git-core curl libcurl4-openssl-dev
+sudo bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+sudo apt-get install libcurl4-openssl-dev build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev
+rvm list known
+rvm install 1.9.2
+rvm use 1.9.2
+rvm rubygems latest
+</code>
+
+More information can be found <a href="https://rvm.beginrescueend.com/" title="RVM">here
+</a>
+
+<code class="bash">
+sudo gem install rails
+ulimit -v 307200
+sudo gem install passenger
+passenger-install-nginx-module
+
+</code>
+
+<strong>Apache</strong>
+
+a2ensite [site-name] 

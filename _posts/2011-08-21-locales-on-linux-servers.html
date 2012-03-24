@@ -1,0 +1,50 @@
+--- 
+layout: post
+title: Locales on Linux servers
+tags: 
+- Linux
+- linux
+- locales
+- server
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+Ever since I got a VPS, I've encountered lots of locale problems.
+I get problems like:
+
+<code lang="bash">
+setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+</code>
+and 
+<code lang="bash">
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = "en_US.UTF-8",
+	LC_MESSAGES = "POSIX",
+	LC_CTYPE = "en_US.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+</code>
+And every time I have reinstalled my Debian or Ubuntu distribution, I have solved it up in a different manner. 
+
+Anyhow, the latest one has so far seemed the best
+<code lang="bash">
+apt-get install language-pack-en
+</code>
+
+My /etc/default/locales looks like this:
+<code lang="bash">
+root@ibslab:~# cat /etc/default/locale
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+LC_MESSAGES=POSIX
+</code>
