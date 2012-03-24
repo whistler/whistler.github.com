@@ -78,6 +78,27 @@ function nextProject(){
     old_project.addClass("project");
     new_project.removeClass("project");
     new_project.addClass("current-project");
+  }  
+}
+
+function previousPost(){
+  var new_project = $(".current-post").prev(".post")
+  if (new_project.length != 0) {
+    var old_project = $(".current-post");
+    old_project.removeClass("current-post");
+    old_project.addClass("post");
+    new_project.removeClass("post");
+    new_project.addClass("current-post");
   }
+}
   
+function nextPost(){
+  var new_project = $(".current-post ~ .post").filter(":first");
+  if (new_project.length != 0) {
+    var old_project = $(".current-post");
+    old_project.removeClass("current-post");
+    old_project.addClass("post");
+    new_project.removeClass("post");
+    new_project.addClass("current-post");
+  }  
 }

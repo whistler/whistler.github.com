@@ -45,10 +45,26 @@
   max-height: 400px;
 }
 
-.current-project {
+.current-post {
   position: relative;
   visibility: visible;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 550px;
 }
+
+.post {
+  visibility: hidden;
+  position: absolute;
+  height:0;
+  width:0;
+}
+
+.current-project img{
+  max-width:500px;
+  max-height: 400px;
+}
+
 
 a {
   text-decoration: none;
