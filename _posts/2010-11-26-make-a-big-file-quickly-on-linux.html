@@ -20,8 +20,8 @@ Sometimes you need a huge dummy file for some reason: maybe you want to test net
 On OSX and BSD, I have read there exists a program called mkfile. But I did not find it on Ubuntu so a bit of looking around I came across truncate.
 
 Just use the command
-<code lang="bash">
+{% highlight bash %}
 truncate -s 1000MB filename.out
-</code>
+{% endhighlight %}
 
 This will create a file called filename.out with a size of 1000MB. The space is not actually allocated on the hard disk but the file entry exists in the file table. See man truncate for more information.

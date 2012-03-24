@@ -19,15 +19,15 @@ While git is pretty useful for an individual developer on the local machine itse
 The most straight-forward way I found to have a git 'server' is to put the repository on a ssh server. You can use a web host to host your repositories. Setting it up is easier than one would think.
 
 On the server create a folder and initialize an empty repository.
-<code lang="bash">
+{% highlight bash %}
 git --bare init
-</code>
+{% endhighlight %}
 
 On your development machine, you add a remote origin.
 
-<code lang="bash">
+{% highlight bash %}
 git remote add origin username@hostname.com:/directory/project.git
 git push origin master
-</code>
+{% endhighlight %}
 
 Thats it. 

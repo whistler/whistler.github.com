@@ -14,12 +14,12 @@ meta:
 ---
 I keep forgetting where the apache error log is. The file is called error.log. So simple solution.
 
-<code lang="bash">
+{% highlight bash %}
 locate error.log
-</code>
+{% endhighlight %}
 
 when the location is found
 
-<code lang="bash">
+{% highlight bash %}
 tail -f /var/log/apache2/error.log 
-</code>
+{% endhighlight %}
