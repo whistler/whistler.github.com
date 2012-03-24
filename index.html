@@ -13,8 +13,8 @@
 
 <div id="nav">
   <a href="#about"><img src="images/about.png">About</a>
-  <a href="#projects"><img src="images/projects.png">Projects</a>
   <a href="#blog"><img src="images/notebook.png">Blog</a>
+  <a href="#projects"><img src="images/projects.png">Projects</a>
   <a href="#photography"><img src="images/photography.png">Photography</a>
 </div>
 
@@ -47,9 +47,14 @@
   <div id="projects" class="step box" data-x="2000" data-rotate-y="10">
     <h1>Projects</h1>
       <div class="current-project">
-        <h2>JumbleSolve</h2>
-        <img src="images/jumblesolve.jpg">
-        <p>A nifty tool to solve anagram puzzles</p>
+        <h2>UAV Project</h2>
+        <img src="images/autonomous_aircraft.jpg">
+        <p>An autonomous aircraft capable of searching for targets on the ground</p>
+      </div>
+      <div class="project">
+        <h2>GPS/IMU Fusion Algorithm</h2>
+        <img src="images/vehicle_collision_prevention.png">
+        <p>Accurate navigation instrumentation for a car collision prevention system</p>
       </div>
       <div class="project">
         <h2>IM Sniffer</h2>
@@ -79,14 +84,9 @@
         <p>Structural analysis of a medieval weapon</p>
       </div>
       <div class="project">
-        <h2>GPS/IMU Fusion Algorithm</h2>
-        <img src="images/vehicle_collision_prevention.png">
-        <p>Accurate navigation instrumentation for a car collision prevention system</p>
-      </div>
-      <div class="project">
-        <h2>UAV Project</h2>
-        <img src="images/autonomous_aircraft.jpg">
-        <p>An autonomous aircraft capable of searching for targets on the ground</p>
+        <h2>JumbleSolve</h2>
+        <img src="images/jumblesolve.jpg">
+        <p>A nifty tool to solve anagram puzzles</p>
       </div>
       <div class="project">
         <h2>Ven.io</h2>
@@ -98,15 +98,17 @@
         <img src="images/shibshib.png">
         <p>Arabic meme site</p>
       </div>
-      <a href="#" onclick="previousProject();">Previous</a>
-      <a href="#" onclick="nextProject();">Next</a>
+      <div style="position: absolute; bottom: 20px; left: 335px">
+      <a href="#" onclick="previousProject();">&lt; Previous Project</a> |
+      <a href="#" onclick="nextProject();">Next Project &gt;</a>
+      </div>
   </div>
   <div id="photography" class="step box" data-x="3000" data-rotate-z="10">
-    <div id="photography-scroll-up" class="center gradient"><img src="images/up.png" style="width: 100px; height: 40px;"></div>
+    <div id="photography-scroll-up" class="center gradient-up"><img src="images/up.png" style="width: 100px; height: 40px;"></div>
     <div id="album">
         <h1>Photography</h1>
     </div>
-    <div id="photography-scroll-down" class="center gradient"><img src="images/down.png" style="width: 100px; height: 40px;"></div>
+    <div id="photography-scroll-down" class="center gradient-down"><img src="images/down.png" style="width: 100px; height: 40px;"></div>
   </div>
   
 </div>
