@@ -30,6 +30,26 @@
   opacity: 1;
 }
 
+.projects {
+    text-align: center;
+}
+.project {
+  visibility: hidden;
+  position: absolute;
+  height:0;
+  width:0;
+}
+
+.current-project img{
+  max-width:500px;
+  max-height: 400px;
+}
+
+.current-project {
+  position: relative;
+  visibility: visible;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -80,7 +100,14 @@ body {
   bottom:0;
   width:100%;
   height: 40px;
-  background-color: blue;
+  z-index: 1;
+}
+
+#photography-scroll-up {
+  position: absolute;
+  top:0;
+  width:100%;
+  height: 40px;
   z-index: 1;
 }
 
@@ -97,19 +124,16 @@ body {
   height: 100%;
 }
 
-
 #album img, #me {
-  height: 180px;
+  height: 250px;
   box-shadow: 4px 0 4px 0 grey;
   padding: 5px;
 }
-#album img:hover {
-  /*position: absolute;*/
-  top:0;
-  left: 0;
+
+/*#album img:hover {
   height: auto;
   width: 700px;
-}
+}*/
 
 .hint {
     position: fixed;
@@ -159,4 +183,21 @@ body {
 
 .center {
   text-align: center;
+}
+
+.gradient {
+    background: #4C95AF;
+    background:
+        -moz-linear-gradient(
+            center bottom,
+            rgba(0,0,0,0) 95%,
+            rgba(255,255,255,0.9) 5%
+        );
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.95, rgba(0,0,0,0)),
+        color-stop(0.05, rgba(255,255,255,0.9))
+    );
 }

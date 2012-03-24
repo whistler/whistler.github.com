@@ -25,6 +25,16 @@ var mo = false;
       mo = false;
       clearTimeout($(this).data('timeout'));
     });
+    
+    $("#photography-scroll-up").hover( function () {
+      mo = true;
+      $(this).data('timeout', setTimeout( function () {
+        scrollAlbumUp();
+      }, 100));
+    }, function () {
+      mo = false;
+      clearTimeout($(this).data('timeout'));
+    });
 
   });   
 
@@ -37,4 +47,37 @@ function scrollAlbumDown() {
   $("#photography-scoll-down").data('timeout', setTimeout( function () {
      scrollAlbumDown();
    }, 70))};
+}
+
+function scrollAlbumUp() {
+  var album = document.getElementById('album')
+  album.scrollTop = album.scrollTop - 10;
+  console.log(mo);
+  if (mo==true) {
+  $("#photography-scoll-down").data('timeout', setTimeout( function () {
+     scrollAlbumUp();
+   }, 70))};
+}
+
+function previousProject(){
+  var new_project = $(".current-project").prev(".project")
+  if (new_project.length != 0) {
+    var old_project = $(".current-project");
+    old_project.removeClass("current-project");
+    old_project.addClass("project");
+    new_project.removeClass("project");
+    new_project.addClass("current-project");
+  }
+}
+  
+function nextProject(){
+  var new_project = $(".current-project ~ .project").filter(":first");
+  if (new_project.length != 0) {
+    var old_project = $(".current-project");
+    old_project.removeClass("current-project");
+    old_project.addClass("project");
+    new_project.removeClass("project");
+    new_project.addClass("current-project");
+  }
+  
 }
