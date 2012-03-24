@@ -1,0 +1,25 @@
+--- 
+layout: post
+title: Apache error log
+tags: 
+- apache
+- Linux
+- linux
+- server
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I keep forgetting where the apache error log is. The file is called error.log. So simple solution.
+
+{% highlight bash %}
+locate error.log
+{% endhighlight %}
+
+when the location is found
+
+{% highlight bash %}
+tail -f /var/log/apache2/error.log 
+{% endhighlight %}

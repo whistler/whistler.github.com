@@ -1,6 +1,6 @@
 ---
 theme :
-  name : twitter
+  name : muhaic
 ---
 <html>
 <head>
@@ -10,6 +10,7 @@ theme :
 
 <title>Ibrahim Muhammad</title>
 <link href="ibrahim.css" rel="stylesheet" type="text/css"></link>
+<link href="syntax-github.css" rel="stylesheet" type="text/css"></link>
 <script src="jquery.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Exo:400,300italic' rel='stylesheet' type='text/font'>
 </head>
@@ -43,9 +44,21 @@ theme :
     </div>
   </div>
   <div id="blog" class="step box" data-x="1000" data-rotate-z="-10">
-    <h1>Blog</h1>
-    <span>24th March 2012</span>
-    <p>I am thinking of what would be a good way to insert a blog over here. I want to be able to use a simple markup language eg. Textile to generate posts, I dont want a database, I want to import content over from my Wordpress blog. Looking into Jekyll at the moment.</p>
+    {% for post in site.posts %}
+      {% if post.title == site.posts.first.title %}
+        <div class="current-post">
+      {% else %}
+        <div class="post">
+      {% endif %}
+        <h1>Blog &raquo; {{ post.title }}</h1>
+        <span class="date">{{ post.date | date_to_string }}</span>  
+        <p>{{ post.content }}</p>
+      </div>
+    {% endfor %}
+    <div style="position: absolute; bottom: 20px; left: 335px">
+    <a href="#" onclick="previousPost();">&lt; Previous Post</a> |
+    <a href="#" onclick="nextPost();">Next Post &gt;</a>
+    </div>
   </div>
   <div id="projects" class="step box" data-x="2000" data-rotate-y="10">
     <h1>Projects</h1>

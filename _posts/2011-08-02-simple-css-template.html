@@ -1,0 +1,75 @@
+--- 
+layout: post
+title: Simple Layout CSS Template
+tags: 
+- css
+- template
+- Web Design
+- webdesign
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+<p>HTML<br />
+{% highlight html %}
+<html>
+<body>
+<div id="container">
+  <div id=header>
+    <a href='/'><h1>Title</h1></a></div>
+  <div id=content>
+    <div id=col1></div>
+    <div id=col2></div>
+  </div>
+  <div id="footer"></div>
+</div>
+</body>
+</html>
+{% endhighlight %}</p>
+<p>CSS<br />
+{% highlight css %}
+#container {
+	paddding: 150px;
+	background-color:white;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin: 0 auto;
+	width: 1200px;
+}
+#header{
+	width: 80%;
+	padding: 50px;
+}
+#content{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#footer {
+	clear: both;
+	font-size: .8em; background-color: #FFFF33;
+}
+#col1 {
+	padding: 40px;
+	margin: 40px;
+	margin-top: 0px;
+	margin-left: 0px;
+	background-color: #eeeeee;
+	width: 40%;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	float: left;
+}
+#col2 {
+	padding: 40px;
+	margin:; 40px;
+	background-color: #eeeeee;
+	width: 40%;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	float:right;
+}
+{% endhighlight %}

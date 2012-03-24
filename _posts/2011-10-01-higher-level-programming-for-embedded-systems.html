@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: Higher level programming for embedded systems
+tags: 
+- linux
+- open source
+- programming
+- Robotics
+- robots
+- RTOS
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I don't have too much experience in this area, but I was thinking, it would be cool to have something more higher level for programming embedded systems. It would be cool if you could write Ruby code to program a robot. There are GUIs out there that allow kids to program robots but its not really as interesting as coding. 
+
+During my senior design project at AUS, we were using Simulink Realtime Toolkit to program our unmanned aircraft. And I must admit Simulink is really cool particularly for programming control systems, but it has its limitations. It was really painful to create and improve our communication stack. It would have been much easier to do in C, now the thing is you can embed C code in Simulink and we did, but you are forced to do something every time step like the rest of the Simulink blocks, it would be nice to be more procedural.
+
+Something I also learnt during this project was that hardware programming is actually done on a much lower level than making computer applications. Take communication stacks for example, the packets are typically fixed length, with a byte for indicating packet type. Which is efficient but a TCP protocol, HTTP for example which uses a string to identify the packet is easier to work with for programmers. Now efficiency makes sense with expensive processors and low computational resources. But I think now is the right time for a Rails like revolution in Embedded systems. 
+
+With Ruby on Rails, webs applications can be created faster, they might not be as efficient as writing an application in Ruby from scratch. Webservers are not that expensive these days but web developers are. So it makes a lot of sense to use Rails. Also Rails makes web development more fun by using a Dont Repeat Yourself philosophy, programmers spend less time doing repetitive tasks and concentrate on the building part more. Ruby is platform independent, it would be great to see open source robotics code that can be run across platforms. Not to forget that Ruby itself is opensource and free, if you have to pay a lot of money to get a licence for proprietary software, its just going to slow things down.
+
+I believe that the new generation is going to do great things. Some schools teach some robotics, many teach programming. The cost of computation is going down. We shouldn't care too much about efficiency and just let people be creative without worrying to much about the details. We need a platform with automatic memory allocation and garbage collection, with opensource libraries which have an easy and consistent way to install, something like rubygems or python eggs. We need to follow convention over configuration. It would be nice if we have a PID controller class, a communication protocol class, debugging/controlling over an ssh terminal, easy way to interface with different kinds of hardware such as wifi, bluetooth, ethernet, servos, sensors, camera, etc.
+
+Obviously it could not run on all hardware, but we need several different platforms to support this kind of system. I think an opensource Unix-based OS can be a good start to create something like this. We need to make configuration and installation of these systems as simple as possible. Also we need to have educational videos similar to railscasts.com on how various things can be done with it.
+

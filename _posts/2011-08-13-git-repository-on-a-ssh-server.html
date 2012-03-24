@@ -1,0 +1,33 @@
+--- 
+layout: post
+title: Git repository on a SSH Server
+tags: 
+- git
+- Linux
+- repository
+- Ruby On Rails
+- server
+- ssh
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+While git is pretty useful for an individual developer on the local machine itself. Having your git repository in a central location allows you not only to work in teams but work on your project from different computers. 
+
+The most straight-forward way I found to have a git 'server' is to put the repository on a ssh server. You can use a web host to host your repositories. Setting it up is easier than one would think.
+
+On the server create a folder and initialize an empty repository.
+{% highlight bash %}
+git --bare init
+{% endhighlight %}
+
+On your development machine, you add a remote origin.
+
+{% highlight bash %}
+git remote add origin username@hostname.com:/directory/project.git
+git push origin master
+{% endhighlight %}
+
+Thats it. 
