@@ -78,10 +78,6 @@ function nextProject(){
     old_project.addClass("project");
     new_project.removeClass("project");
     new_project.addClass("current-project");
-<<<<<<< HEAD
-  }
-  
-=======
   }  
 }
 
@@ -105,5 +101,4 @@ function nextPost(){
     new_project.removeClass("post");
     new_project.addClass("current-post");
   }  
->>>>>>> posts
 }
