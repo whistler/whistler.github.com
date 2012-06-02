@@ -35,14 +35,33 @@ var mo = false;
       mo = false;
       clearTimeout($(this).data('timeout'));
     });
-
+    rotateImages();
+    
+    $('.photo').imagesLoaded( rotateImages() );
+    
   });   
 
+function rotateImages() {
+  photos = $(".photo");
+  len = photos.length;
+  for(i=0;i<len;i++)
+  {
+    var deg=Math.random() * 6 - 3;
+    console.log(deg);
+    $(photos[i]).rotate(deg);
+  }
+}
+
+function masonify(){
+  $('#album').masonry({
+    itemSelector: '.photo'
+  });
+  $("#album").css("height","700px")
+}
 
 function scrollAlbumDown() {
   var album = document.getElementById('album')
   album.scrollTop = album.scrollTop + 10;
-  console.log(mo);
   if (mo==true) {
   $("#photography-scoll-down").data('timeout', setTimeout( function () {
      scrollAlbumDown();

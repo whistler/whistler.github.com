@@ -71,7 +71,6 @@
 }
 
 
->>>>>>> posts
 a {
   text-decoration: none;
   color: black;
@@ -146,7 +145,14 @@ body {
   height: 100%;
 }
 
-#album img, #me, .current-project img {
+.photo {
+  height: 250px;
+  box-shadow: 4px 0 4px 0 grey;
+  padding: 5px;
+  margin: 5px;
+}
+
+#me, .current-project img {
   height: 250px;
   box-shadow: 4px 0 4px 0 grey;
   padding: 5px;
