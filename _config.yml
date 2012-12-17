@@ -4,12 +4,16 @@ permalink: /:categories/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
+server: true
 pygments: true
+future: false
+lsi: true
+paginate: 7
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Ibrahim's Website
+title : Ibrahim Muhammad
 tagline: Spillage of an overloaded mind
 author :
   name : Ibrahim Muhammad
@@ -25,7 +29,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://whistler.github.com
+production_url : http://ibrahimmuhammad.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

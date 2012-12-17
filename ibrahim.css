@@ -50,7 +50,7 @@
   visibility: visible;
 }
 
-.current-post {
+.posts-list {
   position: relative;
   visibility: visible;
   overflow-x: hidden;
