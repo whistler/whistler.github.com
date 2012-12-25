@@ -10,7 +10,7 @@ layout: post
   <div class="span8">
     {{ content }}
 
-    {% include JB/comments %}
+    {% include comments.html %}
   </div>
   
   <div class="span4">
@@ -21,7 +21,6 @@ layout: post
     <h4>Tags</h4>
     <ul class="tag_box">
     {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
     </ul>
   {% endunless %}  
   </div>
