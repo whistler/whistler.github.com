@@ -87,12 +87,15 @@ body {
   font-size: 21px;
   color: #2E2D2B;
   
-  background: rgb(215, 215, 215);
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-  background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+	background-image: url("/images/background.png"), rgb(255, 255, 255);
+  background-image: url("/images/background.png"), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(230, 230, 230)));
+  background-image: url("/images/background.png"), -webkit-radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+  background-image: url("/images/background.png"),    -moz-radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+  background-image: url("/images/background.png"),      -o-radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+  background-image: url("/images/background.png"),         radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+	
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .box {
