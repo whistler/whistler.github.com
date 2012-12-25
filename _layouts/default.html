@@ -2,30 +2,10 @@
 theme :
   name : muhaic
 ---
-<html>
-<head>
-
-<title>Ibrahim Muhammad</title>
-<link href="ibrahim.css" rel="stylesheet" type="text/css"></link>
-<link href="syntax-github.css" rel="stylesheet" type="text/css"></link>
-<script src="jquery.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Exo:400,300italic' rel='stylesheet' type='text/font'>
-</head>
-<body>
-
-<div id="nav">
-  <a href="#about"><img src="images/about.png">About</a>
-  <a href="#blog"><img src="images/notebook.png">Blog</a>
-  <a href="#projects"><img src="images/projects.png">Projects</a>
-  <a href="#photography"><img src="images/photography.png">Photography</a>
-</div>
-
+{% include header.html %}
 <div>
 
   {{ content }}
   
 </div>
-
-{% include _google_analytics.html %}
-</body>
-</html>
+{% include footer.html %}
