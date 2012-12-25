@@ -1,0 +1,13 @@
+<div id="blog" class="step box" data-x="1000" data-rotate-z="-10">
+  <div class="posts-list">
+    <h1>Blog</h1>
+    {% for post in site.posts %}
+      <a href="{{ post.url }}">
+        <div class="posts-list-item">
+          <h3>{{ post.title }}</h3>
+          <span class="date">{{ post.date | date_to_string }}</span>  
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
