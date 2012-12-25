@@ -4,11 +4,6 @@ title: Quick Guide For User Interface Design (for Web Apps)
 tags: 
 - User Interfaces
 - Design
-status: publish
-type: post
-published: true
-meta: 
-  _edit_last: "1"
 ---
 
 Here are a bunch of guidelines I think are important for creating a great user

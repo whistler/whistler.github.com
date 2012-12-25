@@ -5,12 +5,6 @@ tags:
 - science
 - engineer
 - hci
-status: publish
-type: post
-published: true
-meta: 
-  _wp_old_slug: ""
-  _edit_last: "1"
 ---
 
 Ever since I watched a TED Talk, I forget which one, I have become fascinated

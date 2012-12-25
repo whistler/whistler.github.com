@@ -2,12 +2,6 @@
 layout: post
 title: X number of fixed width divs side by side in a fluid layout
 tags: []
-
-status: publish
-type: post
-published: true
-meta: 
-  _edit_last: "1"
 ---
 In recent months, I have been experimenting a lot with fluid width layouts. As we now have devices with a range of screen sizes, to create a good user experience across all different resolutions, I think fluid layouts are the way to move forward.
 

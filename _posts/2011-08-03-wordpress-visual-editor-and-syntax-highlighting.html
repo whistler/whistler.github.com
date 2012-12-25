@@ -7,11 +7,6 @@ tags:
 - highlight
 - syntax
 - Wordpress
-status: publish
-type: post
-published: true
-meta: 
-  _edit_last: "1"
 ---
 Somehow the visual editor was not working on my wordpress installtion. I checked the server log and it turned out that the file permissions were not set up correctly. Just needed to give do <code lang="bash">chmod -R +r .</code> in the wp-includes/js directory to get it working again.
 
