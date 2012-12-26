@@ -7,10 +7,12 @@ title: About
 <img id="me" class="circle" src="/images/ib.jpg">
 
 Hello!
-My name is Ibrahim Muhammad and I love to build things. Engineer, Entrepreneur, Student.
+My name is Ibrahim Muhammad and I love to build things.
 
 I studied Mechanical Engineering at American University of Sharjah.
-Cofounded <a href="http://ven.io">Venio</a>.
+
+I co-founded <a href="http://ven.io">Venio</a>.
+
 I'm a Graduate student at UBC.
 
 
