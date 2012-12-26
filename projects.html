@@ -1,15 +1,16 @@
 ---
 layout: page
-permalink: thoughts/
-title: Thoughts
+permalink: projects/
+title: Projects
 ---
 <div class="posts-list">
-  {% for post in site.posts %}
-    <a href="{{ post.url }}">
-      <div class="posts-list-item">
-        <h3>{{ post.title }}</h3>
-        <span class="date">{{ post.date | date_to_string }}</span>  
-      </div>
-    </a>
+  {% for page in site.pages %}
+		{% if page.category == 'project' %}
+	    <a href="{{ page.url }}">
+	      <div class="posts-list-item">
+	        <h3>{{ page.title }}</h3>
+	      </div>
+	    </a>
+		{% endif %}
   {% endfor %}
 </div>
