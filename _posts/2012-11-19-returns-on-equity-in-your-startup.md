@@ -2,6 +2,7 @@
 title: Return on investment of you working at a Startup
 layout: post
 tags: investment, startups
+published: false
 ---
 
 There are a lot of benifits of being in a startup, like learning a lot
