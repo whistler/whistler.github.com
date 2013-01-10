@@ -1,0 +1,132 @@
+---
+title: Startup Names
+layout: post
+published: false
+---
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+var data = [{ "chars" : 1, "count" : 22 },
+{ "chars" : 2, "count" : 55 },
+{ "chars" : 3, "count" : 540 },
+{ "chars" : 4, "count" : 1129 },
+{ "chars" : 5, "count" : 2223 },
+{ "chars" : 6, "count" : 3972 },
+{ "chars" : 7, "count" : 4898 },
+{ "chars" : 8, "count" : 5177 },
+{ "chars" : 9, "count" : 5168 },
+{ "chars" : 10, "count" : 4696 },
+{ "chars" : 11, "count" : 3990 },
+{ "chars" : 12, "count" : 3657 },
+{ "chars" : 13, "count" : 3338 },
+{ "chars" : 14, "count" : 2916 },
+{ "chars" : 15, "count" : 2675 },
+{ "chars" : 16, "count" : 2432 },
+{ "chars" : 17, "count" : 2234 },
+{ "chars" : 18, "count" : 1931 },
+{ "chars" : 19, "count" : 1655 },
+{ "chars" : 20, "count" : 1437 },
+{ "chars" : 21, "count" : 1232 },
+{ "chars" : 22, "count" : 1082 },
+{ "chars" : 23, "count" : 888 },
+{ "chars" : 24, "count" : 771 },
+{ "chars" : 25, "count" : 705 },
+{ "chars" : 26, "count" : 533 },
+{ "chars" : 27, "count" : 501 },
+{ "chars" : 28, "count" : 406 },
+{ "chars" : 29, "count" : 335 },
+{ "chars" : 30, "count" : 300 },
+{ "chars" : 31, "count" : 246 },
+{ "chars" : 32, "count" : 214 },
+{ "chars" : 33, "count" : 188 },
+{ "chars" : 34, "count" : 174 },
+{ "chars" : 35, "count" : 148 },
+{ "chars" : 36, "count" : 121 },
+{ "chars" : 37, "count" : 120 },
+{ "chars" : 38, "count" : 85 },
+{ "chars" : 39, "count" : 84 },
+{ "chars" : 40, "count" : 100 },
+{ "chars" : 41, "count" : 49 },
+{ "chars" : 42, "count" : 52 },
+{ "chars" : 43, "count" : 37 },
+{ "chars" : 44, "count" : 35 },
+{ "chars" : 45, "count" : 49 },
+{ "chars" : 46, "count" : 23 },
+{ "chars" : 47, "count" : 28 },
+{ "chars" : 48, "count" : 24 },
+{ "chars" : 49, "count" : 28 },
+{ "chars" : 50, "count" : 22 },
+{ "chars" : 51, "count" : 20 },
+{ "chars" : 52, "count" : 16 },
+{ "chars" : 53, "count" : 22 },
+{ "chars" : 54, "count" : 15 },
+{ "chars" : 55, "count" : 14 },
+{ "chars" : 56, "count" : 11 },
+{ "chars" : 57, "count" : 9 },
+{ "chars" : 58, "count" : 13 },
+{ "chars" : 59, "count" : 5 },
+{ "chars" : 60, "count" : 14 },
+{ "chars" : 61, "count" : 3 },
+{ "chars" : 62, "count" : 8 },
+{ "chars" : 63, "count" : 5 },
+{ "chars" : 64, "count" : 5 },
+{ "chars" : 65, "count" : 8 },
+{ "chars" : 66, "count" : 5 },
+{ "chars" : 67, "count" : 5 },
+{ "chars" : 68, "count" : 8 },
+{ "chars" : 69, "count" : 1 },
+{ "chars" : 70, "count" : 3 },
+{ "chars" : 71, "count" : 1 },
+{ "chars" : 72, "count" : 4 },
+{ "chars" : 73, "count" : 1 },
+{ "chars" : 75, "count" : 1 },
+{ "chars" : 76, "count" : 3 },
+{ "chars" : 79, "count" : 3 },
+{ "chars" : 80, "count" : 5 },
+{ "chars" : 81, "count" : 2 },
+{ "chars" : 82, "count" : 1 },
+{ "chars" : 83, "count" : 1 },
+{ "chars" : 84, "count" : 2 },
+{ "chars" : 85, "count" : 1 },
+{ "chars" : 87, "count" : 1 },
+{ "chars" : 89, "count" : 1 },
+{ "chars" : 91, "count" : 1 },
+{ "chars" : 93, "count" : 2 },
+{ "chars" : 98, "count" : 1 },
+{ "chars" : 114, "count" : 1 },
+{ "chars" : 115, "count" : 1 },
+{ "chars" : 119, "count" : 1 },
+{ "chars" : 120, "count" : 1 },
+{ "chars" : 126, "count" : 1 },
+{ "chars" : 134, "count" : 1 },
+{ "chars" : 143, "count" : 1 },
+{ "chars" : 146, "count" : 1 },
+{ "chars" : 152, "count" : 1 },
+{ "chars" : 153, "count" : 1 },
+{ "chars" : 233, "count" : 1 },
+{ "chars" : 255, "count" : 3 }];
+
+$( function() {
+	var w = 1200;
+	var h = 400;
+	var padding = 1;
+	var svg = d3.select("#chart").append("svg").attr("width", w).attr("height", h)
+	svg.selectAll("rect").data(data).enter().append("rect")
+		.attr("x", function(d,i) {return d["chars"] * w / data[data.length - 1]["chars"] - padding;} )
+		.attr("height", function(d) {return d["count"]/15})
+		.attr("y", function(d) {return h - d["count"]/15})
+		.attr("width", 2).attr("fill","#8A9B0F");
+
+});
+</script>
+
+<style>
+.bar {
+  display: inline-block;
+  width: 10px;
+  height: 75px;
+  background-color: #8A9B0F;
+	margin-right: 1px;
+}
+</style>
+
+<div id="chart"></div>
