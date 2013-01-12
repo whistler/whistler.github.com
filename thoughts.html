@@ -9,7 +9,7 @@ title: Thoughts
 	    <a href="{{ post.url }}">
 	      <div class="posts-list-item">
 	        <h3>{{ post.title }}</h3>
-	        <span class="date">{{ post.date | date_to_string }}</span>  
+          <span>{{ post.content | truncate: 140 }}</span>
 	      </div>
 	    </a>
 			{% endif %}

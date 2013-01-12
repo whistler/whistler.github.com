@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Ibrahim Muhammad
 tagline: Rails, Entreprenuership & Computational Intelligence
 ---
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<div class="posts">
+  {% for post in site.posts limit:5 %}
+  <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+  <span>{{ post.content | truncatehtml: 400 }}</span>
   {% endfor %}
-</ul>
+</div>
 
 
