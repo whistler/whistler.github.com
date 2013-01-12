@@ -20,7 +20,7 @@ As the idea doesn't really matter, what matters is the team. Select the people i
 Iterate
 -------
 This concept has been repeated my many: solve the problem in the simplest way you can, get feedback, make small continuous improvements. 
-[Read Eric Ries]
+[Read Eric Ries](http://theleanstartup.com/)
 
 
 Validate before building
@@ -44,12 +44,12 @@ This is not just changing the colour of the signup button when your product is r
 Growth
 ------
 Don't spend too much money on marketing when the product is not ready. When you reach product-market fit, aim for a constant growth rate. 
-[Paul Graham]
+[Paul Graham](http://paulgraham.com/growth.html)
 
 Types of Markets
 ----------------
 Understand what it really means to be a startup. You could be creating other kinds of businesses too. 
-[Peter Theil]
+[Steve Blank](http://www.udacity.com/view#Course/ep245/CourseRev/1/Unit/219001/Nugget/288004)
 
 Experimenting
 -------------
@@ -69,4 +69,7 @@ Make your whole team feel like they are a part of it. Ask them for their input, 
 I would love to hear if you disagree with anything I've said or would like to add anything to the list. I am in no way an experienced entrepreneur, however these are things I have learned from mingling with other startups, having been a founding member of Venio, going through the Extreme Startups program, listening to accomplished mentors and reading popular authors on the topic.
 
 
+Books are more valuable then blogs
+----------------------------------
+There are a lot of interesting blog posts about startups, it's a waste of time to read too many of those. For sound advice, I've learned to rely more on books. Eric Ries, Steve Blank, Ash Maurya, Alexander Osterwalder, etc have great books. Make sure you read those.
 

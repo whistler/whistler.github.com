@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quick Guide For User Interface Design (for Web Apps)
+title: Designing beautiful web applications
 tags: 
 - User Interfaces
 - Design

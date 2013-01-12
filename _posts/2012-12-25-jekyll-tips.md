@@ -36,4 +36,7 @@ If you want to create sections on your site like Projects, Gallery, Notes, etc i
 {% endhighlight %}
 
 This example shows pages, but it can be done with posts as well. You can even create subfolders in /_posts to make it easier to organize. 
+
+#### Truncating HTML content
+Suppose you are listing all the posts on your blog index and want to truncate html, Jekyll will give you a parse error due to invalid html. [TruncateHTML plugin](https://github.com/MattHall/truncatehtml) comes to the rescue.
 	
