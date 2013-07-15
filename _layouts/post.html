@@ -10,7 +10,7 @@ layout: post
   
   <div>
     {{ content }}
-    <div class="date"><p>{{ page.date | date_to_long_string }}</p></div>
+    <div class="date"><p>{{ page.date | time_ago_in_words }}</p></div>
     <hr/>
     {% include comments.html %}
   </div>

@@ -21,8 +21,6 @@ Style:
     background-color: #ccc;
     vertical-align: top;
     display: inline-block;
-    *display: inline; /* IE6 */
-    zoom: 1
 }
 {% endhighlight %}
 

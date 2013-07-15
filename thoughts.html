@@ -3,15 +3,16 @@ layout: page
 permalink: thoughts/
 title: Thoughts
 ---
+
 <div class="posts-list">
   {% for post in site.posts %}
-		{% if post.category != 'snippet' %}
+    {% if post.category != 'snippet' %}
 	    <a href="{{ post.url }}">
 	      <div class="posts-list-item">
 	        <h3>{{ post.title }}</h3>
-          <span>{{ post.content | truncate: 140 }}</span>
+          <span>{{ post.content | strip_html | truncate: 140 }}</span>
 	      </div>
 	    </a>
-			{% endif %}
+    {% endif %}
   {% endfor %}
 </div>

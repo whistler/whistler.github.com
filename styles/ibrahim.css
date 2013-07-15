@@ -1,58 +1,5 @@
-#canvas {
-  z-index: -1000;
-}
 
-#nav {
-  background-color: rgba(255,255,255,0.2);
-  border-radius: 5px;
-  padding: 5px;
-  color: #000000;
-  box-shadow: 0px 0px 1px #efefef;
-  vertical-align: middle;
-	width: 700px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.nav-title {
-	font-weight: bold;
-	margin: 10px;
-}
-
-.nav-title h1 {
-	font-size: 1em;
-	padding: 0px;
-	margin: 0px;
-}
-
-#nav .nav-title img {
-	height: 32px;
-	width: 1px;
-	vetical-align: middle;
-}
-
-#nav a {
-  opacity: 0.2;
-  color: #000000;
-  text-decoration: none;
-	padding-left: 10px;
-	font-size: 18px;
-  
-  transition: all 1.5s;
-  -moz-transition: all 1.5s;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-}
-
-#nav img {
-  height: 32px;
-  width: 32px;
-  vertical-align: middle;
-}
-
-#nav a:hover {
-  opacity: 1;
-}
+/* Generic Styles */
 
 p {
   margin-top: 5px;
@@ -60,7 +7,7 @@ p {
   font-size: 22px;
   line-height: 1.6em;
 }
-li, span {
+div, li, span {
   font-family: 'Mate', Georgia, Times;  
 }
 
@@ -82,7 +29,7 @@ h2 {
 	font-size: 1.25em;
 }
 h3 {
-	font-size: 1.25em;
+	font-size: 1.2 em;
 }
 h3 {
 	font-size: 1.15em;
@@ -93,131 +40,32 @@ body {
   font-family: 'Droid Sans', sans-serif;
   font-size: 21px;
   color: #2E2D2B;
-  
-	background-image: url("/images/background.png"), rgb(255, 255, 255);
+  background-color: #0a0a0a;
+  margin: 0px;
+  padding: 0px;
+}
+
+#page {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  background-image: url("/images/background.png"), rgb(255, 255, 255);
   background-image: url("/images/background.png"), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(250, 250, 250)));
   background-image: url("/images/background.png"), -webkit-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
   background-image: url("/images/background.png"),    -moz-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
   background-image: url("/images/background.png"),      -o-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
   background-image: url("/images/background.png"),         radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
-	
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
+  padding-bottom: 40px;
 }
 
-#album {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 100%;
-  height: 100%;
+.content {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.photo {
-  height: 250px;
-  box-shadow: 4px 0 4px 0 grey;
-  padding: 5px;
-  margin: 5px;
-}
-
-.current-project img {
-  height: 250px;
-  box-shadow: 4px 0 4px 0 grey;
-  padding: 5px;
-}
-
-.hint {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 200px;
-    
-    background: rgba(0,0,0,0.5);
-    color: #EEE;
-    text-align: center;
-    
-    font-size: 50px;
-    padding: 20px;
-    
-    z-index: 100;
-    
-    opacity: 0;
-    
-    -webkit-transform: translateY(400px);
-    -moz-transform:    translateY(400px);
-    -ms-transform:     translateY(400px);
-    -o-transform:      translateY(400px);
-    transform:         translateY(400px);
-
-    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
-    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
-    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-    transition:         opacity 1s,         transform 0.5s 1s;
-}
-
-.impress-on-bored .hint {
-    opacity: 1;
-    
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
-    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s;
-    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s;
-    -o-transition:      opacity 1s 5s,      -o-transform 0.5s;
-    transition:         opacity 1s 5s,         transform 0.5s;
-    
-    -webkit-transform: translateY(0px);
-    -moz-transform:    translateY(0px);
-    -ms-transform:     translateY(0px);
-    -o-transform:      translateY(0px);
-    transform:         translateY(0px);
-}
-
-.center {
-  text-align: center;
-}
-
-.gradient-up {
-  background: -moz-linear-gradient(top,  rgba(239,239,239,1) 0%, rgba(206,220,225,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,239,239,1)), color-stop(100%,rgba(206,220,225,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(206,220,225,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(206,220,225,0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(206,220,225,0) 100%); /* IE10+ */
-  background: linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(206,220,225,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#00cedce1',GradientType=0 ); /* IE6-9 */
-}
-.gradient-down {
-  background: -moz-linear-gradient(top,  rgba(206,220,225,0) 0%, rgba(239,239,239,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,225,0)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(206,220,225,0) 0%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(206,220,225,0) 0%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(206,220,225,0) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
-  background: linear-gradient(top,  rgba(206,220,225,0) 0%,rgba(239,239,239,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cedce1', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
-}
-
-.date {
-  display: block;
-  font-style: italic;
-}
-
-.highlight {
-	padding: 20px;
-	padding-left: 30px;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-}
-
-ul.posts {
-	list-style: none;
-}
+/* Predefined reusable classes */
 
 .float-left {
 	float: left;
@@ -234,8 +82,88 @@ ul.posts {
 
 .circle {
 	height: 250px;
+  width: 250px;
 	box-shadow: 2px 0 2px 0 gray;
 	border-radius: 125px
+}
+
+/* Navigation Bar */
+
+#nav {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+  padding: 5px;
+  color: #000000;
+  box-shadow: 0px 0px 1px #efefef;
+  vertical-align: middle;
+	width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav-title {
+	font-weight: bold;
+	padding: 10px;
+}
+
+.nav-title h1 {
+	font-size: 1em;
+	padding: 0px;
+	margin: 0px;
+}
+
+#nav a {
+  opacity: 0.2;
+  color: #000000;
+  text-decoration: none;
+	padding-left: 10px;
+  font-family: 'Droid Sans', sans-serif;
+	font-size: 18px;
+  
+  transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+}
+
+#nav img {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+
+#nav a:hover {
+  opacity: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.date {
+  display: block;
+  font-style: italic;
+}
+
+
+/* Code */
+
+.highlight {
+	padding: 20px;
+	padding-left: 30px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.highlight, pre {
+ font: monospace, courier;
+}
+
+/* Posts */
+
+ul.posts {
+	list-style: none;
 }
 
 .posts-list a {
@@ -254,8 +182,70 @@ ul.posts {
   border-bottom: 1px solid grey;
 }
 
-.content {
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.home-post-content p {
+  display: inline;
+}
+
+.bio {
+  opacity: 0;
+  height: 1px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.bio p {
+  margin: 20px;
+  display: inline-block;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.show-bio {
+  opacity: 1;
+  display: block;
+  height: 150px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/* Glyph, by Harry Roberts */
+    
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#bio-me {
+  height: 150px;
+  box-shadow: 2px 0 2px 0 gray;
+  border-radius: 75px;
+  vertical-align: middle;
+  display: inline;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+}
+
+.project img {
+  vertical-align: middle;
+}
+
+.project-description
+{
+  display: inline-block;
+  width: 400px;
+  margin-left: 30px;
 }

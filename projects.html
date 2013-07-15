@@ -3,13 +3,19 @@ layout: page
 permalink: projects/
 title: Projects
 ---
+<br/>
 <div class="posts-list">
   {% for page in site.pages %}
 		{% if page.category == 'project' %}
 	    <a href="{{ page.url }}">
-	      <div class="posts-list-item">
-	        <h3>{{ page.title }}</h3>
+	      <div class="project">
+          <img class="circle" src="{{ page.image }}"/>
+          <div class="project-description">
+            <h3>{{ page.title }}</h3>
+            <p>{{ page.description }}</p>
+          </div>
 	      </div>
+        <hr/>
 	    </a>
 		{% endif %}
   {% endfor %}

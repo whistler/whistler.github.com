@@ -1,0 +1,10 @@
+$(function(){
+  $("#name").mouseenter(
+    function(){
+      $(".bio").addClass("show-bio");
+    })
+  $(".bio").mouseleave(
+    function(){
+      $(".bio").removeClass("show-bio");
+    });
+});
