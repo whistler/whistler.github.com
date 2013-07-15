@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Positioning variable number of fixed width divs side by side in a fluid layout
 category: snippet

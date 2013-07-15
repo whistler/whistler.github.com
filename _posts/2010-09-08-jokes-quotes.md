@@ -1,8 +1,7 @@
---- 
-layout: page
+---
+layout: post
 title: Jokes and Quotes
-tags: []
-type: page
+tags: [jokes, quotes]
 ---
 
 "Excellence is not a destination; it is a continuous journey that never ends."

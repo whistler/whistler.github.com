@@ -1,7 +1,8 @@
 ---
 title: Startup Lessons Learned
 layout: post
-tags: startups, entreprenuership, lean
+tags: [startups, entreprenuership, lean]
+categories: [thoughts]
 published: true
 ---
 

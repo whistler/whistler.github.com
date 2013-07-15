@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Tech Celebrities
-tags: []
+tags: [tech, celebrities]
 ---
 I have been seeing a lot of posts about how everyone cared so much about Steve Jobs death and not Dennis Ritchie's. Thats the sad reality of life, people appreciate business people more then engineers/hackers. Steve Jobs, Bill Gates and Mark Zukerburg are world renowned figure because people use products created by their companies first hand on a day to day basis.
 

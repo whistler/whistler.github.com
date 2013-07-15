@@ -1,7 +1,8 @@
 ---
 title: Jekyll Tips
 layout: post
-tags: blogging, ruby, jekyll
+tags: [blogging, ruby, jekyll]
+categories: [thoughts]
 published: true
 ---
 
@@ -39,4 +40,16 @@ This example shows pages, but it can be done with posts as well. You can even cr
 
 #### Truncating HTML content
 Suppose you are listing all the posts on your blog index and want to truncate html, Jekyll will give you a parse error due to invalid html. [TruncateHTML plugin](https://github.com/MattHall/truncatehtml) comes to the rescue.
+
+#### Discarding HTML tags
+If you want to do the same as above but don't care about html formatting in your content, and easier way to do this is
+
+{% highlight html %}
+	{% raw %}
+...
+{{ post.content | strip_html | truncate: 140 }}
+...
+	{% endraw %}
+{% endhighlight %}
+
 	

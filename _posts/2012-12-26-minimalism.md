@@ -1,7 +1,8 @@
 ---
 title: Minimalism
 layout: post
-tags: life, lean, minimal
+tags: [life, lean, minimal]
+categories: [thoughts]
 published: true
 ---
 

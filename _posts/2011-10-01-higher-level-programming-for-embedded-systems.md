@@ -1,13 +1,7 @@
 --- 
 layout: post
 title: Higher level programming for embedded systems
-tags: 
-- linux
-- open source
-- programming
-- Robotics
-- robots
-- RTOS
+tags: [linux,open source,programming,robotics,robots,RTOS]
 ---
 I don't have too much experience in this area, but I was thinking, it would be cool to have something more higher level for programming embedded systems. It would be cool if you could write Ruby code to program a robot. There are GUIs out there that allow kids to program robots but its not really as interesting as coding. 
 

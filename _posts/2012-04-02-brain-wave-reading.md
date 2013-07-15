@@ -1,10 +1,7 @@
 --- 
 layout: post
 title: Brainwave Reading
-tags: 
-- science
-- engineer
-- hci
+tags: [science,engineer,hci]
 ---
 
 Ever since I watched a TED Talk, I forget which one, I have become fascinated

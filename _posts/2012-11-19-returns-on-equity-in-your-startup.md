@@ -1,7 +1,8 @@
 ---
 title: Return on investment of you working at a Startup
 layout: post
-tags: investment, startups
+tags: [investment, startups]
+categories: [thoughts]
 published: false
 ---
 

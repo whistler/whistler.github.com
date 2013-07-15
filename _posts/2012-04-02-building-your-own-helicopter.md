@@ -1,12 +1,8 @@
---- 
+---
 layout: post
-title: Building an Indoor Helicopter
-tags: 
-- diy
-- hack
-- build
-- design
-- engineer
+title: Homemade Indoor Helicopter
+tags: [diy, hack, build, design, engineer]
+categories: [thoughts]
 ---
 
 For a while I have been thinking about getting an indoor helicopter and modding 
@@ -29,8 +25,7 @@ honest I might have dropped the idea completely if I didn't find this. Here's a 
 <img src="http://www.angelfire.com/blues/heli_project/pic.jpg">
 
 
-Labs
-----
+##Labs
 
 Hence, I am on a quest to understand more about how they work and play with some
 of these. I should really get access to a hack space for this project. I like
@@ -39,8 +34,7 @@ these two in Toronto:
 * [Site3](site3.ca)
 
 
-Things I would need
--------------------
+##Things I would need
 * Airframe - This would be custom built but its a good idea to use parts from 
 another helicopter that is popular
 * On board computer - Im thinking a Raspberry pi might be a good idea, other 
@@ -54,8 +48,7 @@ Bullet is an interesting device that I have used before.
 modify it according to my needs.
 * Books on the topic - Need to head to a good library (i.e. UofT)
 
-Timeframe
----------
+##Timeframe
 This would probably take at least 2-3 years of spare time if not more, I'm already
 involved in a lot of stuff, but keep finding myself researching on miniature
 helicopters every now and then.

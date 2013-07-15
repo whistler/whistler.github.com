@@ -1,11 +1,7 @@
 --- 
 layout: post
 title: Linux vs. Mac
-tags: 
-- comparison
-- Linux
-- linux
-- Mac
+tags: [comparison, linux, mac]
 ---
 So around two months back I got a mac book pro. Macs are really popular among the Rails community, so they must somehow be better and more productive then linux. While in the beginning it seemed really nice, soon I started realizing its limitations. Here are the goods and bads I found.
 

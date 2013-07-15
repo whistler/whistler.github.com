@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Designing beautiful web applications
-tags: 
-- User Interfaces
-- Design
+categories: [thoughts]
+tags: [user interfaces, design, user interaction, web applications]
 ---
 
 Here are a bunch of guidelines I think are important for creating a great user
