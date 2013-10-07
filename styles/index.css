@@ -1,0 +1,24 @@
+/* Posts */
+
+ul.posts {
+	list-style: none;
+}
+
+.posts-list a {
+	color: #4c4c4c;
+}
+
+.posts-list {
+	color: #4c4c4c;
+}
+
+.posts li a {
+	color: #4c4c4c;
+}
+
+.posts-list-item {
+  border-bottom: 1px solid #DCDBDB;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}

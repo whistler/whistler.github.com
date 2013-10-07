@@ -1,0 +1,34 @@
+#bio-me {
+  height: 150px;
+  box-shadow: 2px 0 2px 0 gray;
+  border-radius: 75px;
+  vertical-align: middle;
+  display: inline;
+}
+
+.bio {
+  opacity: 0;
+  height: 1px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.bio p {
+  margin: 20px;
+  display: inline-block;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.show-bio {
+  opacity: 1;
+  display: block;
+  height: 150px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}

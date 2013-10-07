@@ -1,70 +1,3 @@
-
-/* Generic Styles */
-
-p {
-  margin-top: 5px;
-  font-family: 'Mate', Georgia, Times;
-  font-size: 22px;
-  line-height: 1.6em;
-}
-div, li, span {
-  font-family: 'Mate', Georgia, Times;  
-}
-
-p a, span a, body a {
-	color: #8A9B0F;
-	text-decoration: none;
-}
-
-h1,h2,h3,h4{
-	font-family: 'Allerta Stencil', sans-serif;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-h1 {
-	font-size: 1.75em;
-}
-h2 {
-	font-size: 1.25em;
-}
-h3 {
-	font-size: 1.2 em;
-}
-h3 {
-	font-size: 1.15em;
-}
-
-
-body {
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 21px;
-  color: #2E2D2B;
-  background-color: #0a0a0a;
-  margin: 0px;
-  padding: 0px;
-}
-
-#page {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  background-image: url("/images/background.png"), rgb(255, 255, 255);
-  background-image: url("/images/background.png"), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(250, 250, 250)));
-  background-image: url("/images/background.png"), -webkit-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
-  background-image: url("/images/background.png"),    -moz-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
-  background-image: url("/images/background.png"),      -o-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
-  background-image: url("/images/background.png"),         radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
-  padding-bottom: 40px;
-}
-
-.content {
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Predefined reusable classes */
 
 .float-left {
@@ -87,53 +20,12 @@ body {
 	border-radius: 125px
 }
 
-/* Navigation Bar */
-
-#nav {
-  background-color: rgba(255,255,255,0.2);
-  border-radius: 5px;
-  padding: 5px;
-  color: #000000;
-  box-shadow: 0px 0px 1px #efefef;
-  vertical-align: middle;
-	width: 700px;
-  margin-right: auto;
-  margin-left: auto;
+.light {
+  color: #b3b3b1;
 }
 
-.nav-title {
-	font-weight: bold;
-	padding: 10px;
-}
-
-.nav-title h1 {
-	font-size: 1em;
-	padding: 0px;
-	margin: 0px;
-}
-
-#nav a {
-  opacity: 0.2;
-  color: #000000;
-  text-decoration: none;
-	padding-left: 10px;
-  font-family: 'Droid Sans', sans-serif;
-	font-size: 18px;
-  
-  transition: all 1.5s;
-  -moz-transition: all 1.5s;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-}
-
-#nav img {
-  height: 32px;
-  width: 32px;
-  vertical-align: middle;
-}
-
-#nav a:hover {
-  opacity: 1;
+.pad-bottom {
+  padding-bottom: 25px;
 }
 
 .center {
@@ -159,61 +51,6 @@ body {
 .highlight, pre {
  font: monospace, courier;
 }
-
-/* Posts */
-
-ul.posts {
-	list-style: none;
-}
-
-.posts-list a {
-	color: #4c4c4c;
-}
-
-.posts-list {
-	color: #4c4c4c;
-}
-
-.posts li a {
-	color: #4c4c4c;
-}
-
-.post-list-item {
-  border-bottom: 1px solid grey;
-}
-
-.home-post-content p {
-  display: inline;
-}
-
-.bio {
-  opacity: 0;
-  height: 1px;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-
-.bio p {
-  margin: 20px;
-  display: inline-block;
-  font-family: 'Allerta Stencil', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-}
-
-.show-bio {
-  opacity: 1;
-  display: block;
-  height: 150px;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-
-/* Glyph, by Harry Roberts */
     
 hr {
     border: 0;
@@ -226,26 +63,9 @@ hr {
     margin-bottom: 15px;
 }
 
-#bio-me {
-  height: 150px;
-  box-shadow: 2px 0 2px 0 gray;
-  border-radius: 75px;
-  vertical-align: middle;
-  display: inline;
-}
 
 .icon {
   height: 32px;
   width: 32px;
 }
 
-.project img {
-  vertical-align: middle;
-}
-
-.project-description
-{
-  display: inline-block;
-  width: 400px;
-  margin-left: 30px;
-}
