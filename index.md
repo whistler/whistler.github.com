@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 tagline: Rails, Entreprenuership & Computational Intelligence
 ---
 <div class="posts-list">

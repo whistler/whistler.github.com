@@ -2,6 +2,20 @@
 layout: page
 permalink: photography/
 title: Photography
+icon: /images/photography.png
 ---
 
-<embed type="application/x-shockwave-flash" src="https://picasaweb.google.com/s/c/bin/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F117489843558070583795%2Falbumid%2F5683232756186942865%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+<style> 
+.image {
+  max-width: 300px;
+  height: auto;
+  margin: 5px;
+  display: inline-block;
+}
+</style>
+
+<div id="container">
+  {% images /photographs %}
+</div>
+  
+<div class="float-clear"></div>

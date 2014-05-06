@@ -1,3 +1,19 @@
+/* Generic Styles */
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+	color: #8A9B0F;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 /* Predefined reusable classes */
 
 .float-left {
@@ -14,10 +30,10 @@
 }
 
 .circle {
-	height: 250px;
-  width: 250px;
-	box-shadow: 2px 0 2px 0 gray;
-	border-radius: 125px
+  height: 200px;
+  width: 200px;
+  box-shadow: 1px 0 1px 0 #eee;
+  border-radius: 100px
 }
 
 .light {
@@ -40,25 +56,13 @@
 
 /* Code */
 
-.highlight {
-	padding: 20px;
-	padding-left: 30px;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-}
-
 .highlight, pre {
  font: monospace, courier;
 }
     
 hr {
-    border: 0;
+    border-top: 1px solid #eee;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0.55), rgba(0,0,0,0.2)); 
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -67,5 +71,46 @@ hr {
 .icon {
   height: 32px;
   width: 32px;
+  margin: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline;
+  vertical-align: middle;
 }
 
+/* Posts */
+
+ul.posts {
+	list-style: none;
+}
+
+.posts-list a {
+	color: #4c4c4c;
+}
+
+.posts-list {
+	color: #4c4c4c;
+}
+
+.posts li a {
+	color: #4c4c4c;
+}
+
+.posts-list-item {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.project img {
+  vertical-align: middle;
+}
+
+.project-description
+{
+  display: inline-block;
+  margin-left: 30px;
+  float: right;
+  width: calc(100% - 250px);
+}

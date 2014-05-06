@@ -1,4 +1,7 @@
-# returns the url of a random file in a given directory
+# Shows images stored in a directory
+# Usage:
+#     {% images /path/to/images %}
+require 'pry'
 
 module Jekyll
   class FileListTag < Liquid::Tag
@@ -13,8 +16,12 @@ module Jekyll
       dir = File.join(root, @directory)
       files = Dir[dir.to_s+"/*"]
       relfiles = files.map{|file| file.gsub(root,"")}
+      html = relfiles.map do |file|
+        "<img src='#{file}' class='image'/>"
+      end
+      html
     end
   end
 end
 
-Liquid::Template.register_tag('file_list', Jekyll::FileListTag)
+Liquid::Template.register_tag('images', Jekyll::FileListTag)

@@ -2,6 +2,7 @@
 layout: page
 permalink: projects/
 title: Projects
+icon: /images/projects.png
 ---
 <br/>
 <div class="posts-list">
@@ -9,11 +10,12 @@ title: Projects
 		{% if page.category == 'project' %}
 	    <a href="{{ page.url }}">
 	      <div class="project posts-list-item">
-          <img class="circle" src="{{ page.image }}"/>
+          <img class="circle float-left" src="{{ page.image }}"/>
           <div class="project-description">
             <h3>{{ page.title }}</h3>
             <p>{{ page.description }}</p>
           </div>
+          <div class="float-clear"></div>
 	      </div>
 	    </a>
 		{% endif %}
