@@ -1,5 +1,6 @@
 _site/*
 _theme_packages/*
+photographs/*
 
 Thumbs.db
 .DS_Store
@@ -11,3 +12,4 @@ Thumbs.db
 
 upload.sh
 
+_drafts

@@ -1,3 +1,8 @@
+# Jekyll filter to create an outline of a post by selecting the first paragraph 
+# and all the h2s in a post
+# Example:
+# {{ post.content | outline }}
+
 require 'rubygems'
 require 'nokogiri'
 
