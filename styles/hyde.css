@@ -111,10 +111,17 @@ html {
 .sidebar-nav-item {
   display: block;
 }
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
-  text-decoration: underline;
+
+.sidebar-nav-item a span {
+  vertical-align: middle;
 }
+
+.sidebar-nav-item a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+}
+
 .sidebar-nav-item.active {
   font-weight: bold;
 }
@@ -276,5 +283,5 @@ body {
   background-image: url("/images/background.png"),    -moz-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
   background-image: url("/images/background.png"),      -o-radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
   background-image: url("/images/background.png"),         radial-gradient(rgb(255, 255, 255), rgba(250, 250, 250,0.1));
-  
+
 }

@@ -1,19 +1,19 @@
-# This is the default format. 
+# This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:title 
+permalink: /:categories/:title/
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
+highlighter: rouge
 future: false
 lsi: false
 markdown: redcarpet
 
-# Themes are encouraged to use these universal variables 
+# Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title : Ibrahim Muhammad
-tagline: Spillage of an overloaded mind
-description: "Software Craftsman, Nature Lover, Muslim"
+tagline: ""
+description: "Machine Learning, Data Visualization & Lean Product Development"
 author :
   name : Ibrahim Muhammad
   email : ibrahim.mohammad@gmail.com
@@ -21,7 +21,7 @@ author :
   twitter : ibrahimm
 
 # The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
+# such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
 #
 # If you have set a CNAME (pages.github.com) set your custom domain here.
@@ -29,4 +29,3 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://ibrahimmuhammad.com
-    

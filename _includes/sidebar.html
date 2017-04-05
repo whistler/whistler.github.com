@@ -7,7 +7,7 @@
         <p class="lead">{{ site.description }}<br/>
           <a href="https://twitter.com/#!/ibrahimm"><img src="/images/twitter.png" class="icon"></a>
           <a href="https://github.com/whistler"><img src="/images/github.png" class="icon"></a>
-          <a href="http://www.linkedin.com/profile/view?id=67748973"><img src="/images/linkedin.png" class="icon"></a>
+          <a href="https://www.linkedin.com/in/ibrahim-muhammad-6b98321a/"><img src="/images/linkedin.png" class="icon"></a>
         </p>
       </div>
     </a>
@@ -23,7 +23,7 @@
         {% if node.title != null %}
           {% if node.layout == "page" %}
             <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-              <a href="{{ node.url }}"><img src="{{ node.icon }}" class="icon"/>{{ node.title }}</a>
+              <a href="{{ node.url }}"><img src="{{ node.icon }}" class="icon"/><span>{{ node.title }}</span></a>
             </li>
           {% endif %}
         {% endif %}

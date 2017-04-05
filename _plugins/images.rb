@@ -1,7 +1,6 @@
 # Shows images stored in a directory
 # Usage:
 #     {% images /path/to/images %}
-require 'pry'
 
 module Jekyll
   class FileListTag < Liquid::Tag
