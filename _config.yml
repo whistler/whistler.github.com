@@ -13,7 +13,8 @@ markdown: redcarpet
 #
 title : Ibrahim Muhammad
 tagline: ""
-description: "Machine Learning, Data Visualization & Lean Product Development"
+description: "I build ground segment software for Earth observation satellites"
+# description: "Machine Learning, Data Visualization & Lean Product Development"
 author :
   name : Ibrahim Muhammad
   email : ibrahim.mohammad@gmail.com

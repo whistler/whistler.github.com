@@ -2,7 +2,7 @@
 layout: post
 title: Rails upload files to AWS
 category: snippet
-tags: 
+tags:
 - Ruby On Rails
 ---
 There is a very easy way to upload files to AWS S3, however you can easily get lost with different gems and options available. My favorite way is using paperclip with aws-sdk. Here are some quick steps to get you started, look at the gems homepages for more information.

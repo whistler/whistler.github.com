@@ -1,0 +1,22 @@
+- title: Satellite Feature Detection Using ConvNets
+  date: 20-03-2015
+  event: Learn Data Science Meetup
+  url: http://slides.com/ibrahimm/kaggle-satellite-feature-detection#/
+  description: I presented my journery through a Kaggle Competition about detecting features from satellite imagery and various techniques to score a high rank using Convolutional Neural Networks.
+
+- title: Asynchronous Javascript
+  date: 01-04-2015
+  event: UrtheCast
+  url: http://slides.com/ibrahimm/async-javascript#/
+  description: Asynchronous nature of Javascript is often misunderstood. I presented how Asynchronous Javascript works and compare using callbacks, promises, thunks and async/await.
+
+- title: Angular JS Complex Form Validations
+  date: 17-12-2014
+  event: Angular JS Meetup
+  url: http://slides.com/ibrahimm/ng-validation#/
+  description: The native Angular JS validations cannot be used for more complicated validations. I discussed the pros and cons of Angular style form validations, how to move validation logic out of the views, and how to develop a more declarative style of validations in services.
+
+- title: Introduction to Web Development
+  date: 15-02-2009
+  event: American University of Sharjah
+  description: Taught the basics of web development, HTML & CSS to undergraduate students at American University of Sharjah in a workshop.

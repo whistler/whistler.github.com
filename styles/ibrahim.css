@@ -15,8 +15,8 @@ a {
 }
 
 h1,h2,h3,h4{
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  padding: 0px;
+  margin: 0.2rem 0 0.2rem 0;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -84,6 +84,12 @@ hr {
   vertical-align: middle;
 }
 
+.lead .icon {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .icon, .icon img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -127,4 +133,37 @@ ul.posts {
   margin-left: 30px;
   float: right;
   width: calc(100% - 250px);
+}
+
+.index .list p {
+	margin: 0px;
+}
+
+.index .list-item footer {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.index .list-item .image {
+  float: left;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.index .list-item .text {
+  float: right;
+  padding-left: 1rem;
+  width: 50%;
+}
+
+.index .list-item .text p {
+  margin-bottom: 1rem;
+}
+
+.index .list .date {
+  display: inline-block;
+}
+
+.index ul {
+  margin-bottom: 0px;
 }

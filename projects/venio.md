@@ -2,16 +2,12 @@
 title: Venio
 category: project
 layout: project
-image: /images/venio.png
+image: /images/venio_web.png
 description: A personalized nutrition application
 ---
-
-<iframe src="http://player.vimeo.com/video/47831385" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>  
-</iframe>
+I was the founding employee of a nutrition planning web and mobile app. The
+startup was part of the Extreme Startups Accelerator (now Highline) program and
+reached 20+ employees at its peak.
 <p>
-  <a href="http://vimeo.com/47831385">Venio: A Day in the Life - Part 1</a> from 
-  <a href="http://vimeo.com/user13049619">Venio</a> on 
-  <a href="https://vimeo.com">Vimeo</a>.
+  <a href="http://vimeo.com/47831385">Check out video here</a>
 </p>
-
-More information [here](http://ven.io/press).
