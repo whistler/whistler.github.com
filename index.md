@@ -31,7 +31,7 @@ tagline: Rails, Entreprenuership & Computational Intelligence
           </div>
           <div class="text">
             <h3>{{ page.title }}</h3>
-            {{ page.content }}
+            {{ page.content | markdownify }}
           </div>
           <div class="float-clear"></div>
         </div>
@@ -47,7 +47,7 @@ tagline: Rails, Entreprenuership & Computational Intelligence
           <h3>{{ post.title }}</h3>
         </a>
         <p>
-          {{ post.content | outline }}
+          {{ post.content | markdownify | outline }}
         </p>
         <footer class="light">
           <span class="">{{ post.date | date_to_string}}</span>
